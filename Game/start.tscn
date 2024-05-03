@@ -1,0 +1,27 @@
+[gd_scene load_steps=3 format=3 uid="uid://c00uli3o3fw3x"]
+
+[ext_resource type="Script" path="res://play.gd" id="1_g6q8i"]
+[ext_resource type="Script" path="res://quit.gd" id="2_fpvj5"]
+
+[node name="Start" type="Node2D"]
+
+[node name="play" type="Button" parent="."]
+offset_left = 418.0
+offset_top = 52.0
+offset_right = 721.0
+offset_bottom = 165.0
+text = "plau
+"
+script = ExtResource("1_g6q8i")
+
+[node name="quit" type="Button" parent="."]
+offset_left = 422.0
+offset_top = 383.0
+offset_right = 725.0
+offset_bottom = 496.0
+text = "rageqwit
+"
+script = ExtResource("2_fpvj5")
+
+[connection signal="pressed" from="play" to="play" method="_on_pressed"]
+[connection signal="pressed" from="quit" to="quit" method="_on_pressed"]
